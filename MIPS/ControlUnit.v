@@ -22,7 +22,7 @@ module ControlUnit(input [31:0] executedInstr,pcinput ,input nmint,interrupt,bus
 						, output reg [1:0] ALUOp , output reg MemtoReg , RegDst , IorD , ALUSrcA ,
 						IRWrite , MemWrite , PCWrite , Branch , RegWrite ,DelayedIR , output reg [1:0] ALUSrcB , output reg [1:0] PCSrc,
 						output reg pcslct,
-						output reg savePC,
+						output reg savePC,INA,
 						output reg [3:0] current_state
     );
 
@@ -75,6 +75,7 @@ begin
 							savePC=1;
 							PCSrc=3;
 							PCWrite=1;
+							INA=(interrupt & (~busy))& (~nmint);
 							interrupt_execution=1;
 							current_state=fetch;
 							end

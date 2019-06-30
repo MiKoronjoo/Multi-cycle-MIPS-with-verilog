@@ -46,11 +46,11 @@ module ALU_test;
 		// Initialize Inputs
 		srca = 15;
 		srcb = 15;
-		ALUcontrol = 7;
+		ALUcontrol = 7;//15-15
 
 		// Wait 100 ns for global reset to finish
 		#100;
-       srcb = 16;
+       srcb = 16;//16-15
 		// Add stimulus here
 
 	end

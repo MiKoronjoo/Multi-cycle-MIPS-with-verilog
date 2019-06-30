@@ -22,12 +22,12 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
+
 module RegisterFile_test;
 
 	// Inputs
 	reg clk;
 	reg we3;
-	reg [1:0] sr;
 	reg [4:0] address1;
 	reg [4:0] address2;
 	reg [4:0] address3;
@@ -41,7 +41,6 @@ module RegisterFile_test;
 	RegisterFile uut (
 		.clk(clk), 
 		.we3(we3), 
-		.sr(sr), 
 		.address1(address1), 
 		.address2(address2), 
 		.address3(address3), 
@@ -54,7 +53,6 @@ module RegisterFile_test;
 		// Initialize Inputs
 		clk = 0;
 		we3 = 0;
-		sr=1;      //store
 		address1 = 1;
 		address2 = 0;
 		address3 = 1;
@@ -62,14 +60,7 @@ module RegisterFile_test;
 
 		// Wait 100 ns for global reset to finish
 		#100;
-		sr=0;		//do nothing
-		#100;
 		we3=1;
-		#100;
-		we3=0;
-		#100;
-		sr=3;		//restore
-        
 		// Add stimulus here
 
 	end

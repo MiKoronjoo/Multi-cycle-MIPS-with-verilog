@@ -19,9 +19,14 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module Top(input clock,NON_maskable_interrupt,interrupt_r,CPU_busy
+				,output INA,output [31:0] pc_out,output [3:0] system_state,output [31:0] PCIN,
+				output [4:0] reg_write_dest,
+				output  [31:0] reg_write_data,
+				output  [31:0] regdata1,
+				output  [31:0] regdata2
+
     );
 
-wire [31:0] pc_out;
 
 wire [1:0] ALU_operation;
 wire memory_toregister;
@@ -35,20 +40,16 @@ wire pcWrite;
 wire is_branch;
 wire regWrite;
 wire [1:0] pcsource;
-wire [3:0] system_state;
+
 wire [31:0] memory_in_addr;
 wire [31:0] mem_out_instr_data;
 wire [31:0] instruction;
 wire [31:0] data_;
 wire [31:0] interruptAddress;
 wire [31:0] savedPC;
-wire [31:0] PCIN;
+
 
 wire [2:0] ALU_control;
-wire [4:0] reg_write_dest;
-wire [31:0] reg_write_data;
-wire [31:0] regdata1;
-wire [31:0] regdata2;
 wire [31:0] regdata1_a;
 wire [31:0] regdata2_b;
 wire [31:0] signimm;
@@ -118,7 +119,7 @@ ControlUnit Control_Unit(
 	 .pcinput(PCIN),
 	 .nmint(NON_maskable_interrupt),
 	 .interrupt(interrupt_r),
-	 .busy(CPU_bus),
+	 .busy(CPU_busy),
     .opcode(selected_IR[31:26]), 
     .clk(clock), 
     .ALUOp(ALU_operation), 
@@ -136,6 +137,7 @@ ControlUnit Control_Unit(
 	 .DelayedIR(select_IR),
 	 .pcslct(pcslct),
 	 .savePC(savePC),
+	 .INA(INA),
     .current_state(system_state)
     );
 

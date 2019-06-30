@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: ControlUnit.prj
@@ -43,8 +43,8 @@ Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilo
 Parsing module <ControlUnit>.
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.18 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.30 secs
  
 --> 
 
