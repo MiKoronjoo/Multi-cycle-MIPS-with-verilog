@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+Register_with_enable instance_name (
+    .clk(clk), 
+    .en(en), 
+    .dataIn(dataIn), 
+    .dataOut(dataOut)
+    );
+
+

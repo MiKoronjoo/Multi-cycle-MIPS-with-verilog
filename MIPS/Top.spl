@@ -1,0 +1,10 @@
+[Inputs]
+clock
+NON_maskable_interrupt
+interrupt_r
+CPU_busy
+[Outputs]
+[BiDir]
+[ATTRIBUTES]
+VeriModel Top
+

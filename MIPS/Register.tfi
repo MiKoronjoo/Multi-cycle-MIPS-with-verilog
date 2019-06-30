@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+Register instance_name (
+    .clk(clk), 
+    .dataIn(dataIn), 
+    .dataOut(dataOut)
+    );
+
+

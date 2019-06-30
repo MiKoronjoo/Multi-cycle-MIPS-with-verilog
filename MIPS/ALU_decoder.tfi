@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+ALU_decoder instance_name (
+    .ALUop(ALUop), 
+    .funct(funct), 
+    .control(control)
+    );
+
+

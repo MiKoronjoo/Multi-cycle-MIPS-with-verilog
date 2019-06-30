@@ -1,0 +1,46 @@
+Running: D:\Anti-Filter\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top_test_isim_beh.exe -prj C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top_test_beh.prj work.Top_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/TwoInputMux.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/SignExtend.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Register_with_enable.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Register.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegDestMux.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/ProgramCounter.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Interrupt_state.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/FourInputMux.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/ControlUnit.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/ALU_decoder.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/ALU.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top.v" into library work
+Analyzing Verilog file "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top_test.v" into library work
+Analyzing Verilog file "D:/Anti-Filter/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top.v" Line 235: Size mismatch in connection of port <data3>. Formal port size is 32-bit while actual signal size is 1-bit.
+Completed static elaboration
+Compiling module ProgramCounter
+Compiling module TwoInputMux
+Compiling module Memory
+Compiling module Register_with_enable
+Compiling module Register
+Compiling module ControlUnit
+Compiling module Interrupt_state
+Compiling module ALU_decoder
+Compiling module RegDestMux
+Compiling module RegisterFile
+Compiling module SignExtend
+Compiling module FourInputMux
+Compiling module ALU
+Compiling module Top
+Compiling module Top_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 16 Verilog Units
+Built simulation executable C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top_test_isim_beh.exe
+Fuse Memory Usage: 28408 KB
+Fuse CPU Usage: 483 ms

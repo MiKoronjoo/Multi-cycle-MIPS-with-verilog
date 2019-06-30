@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+RegisterFile instance_name (
+    .clk(clk), 
+    .we3(we3), 
+    .sr(sr), 
+    .address1(address1), 
+    .address2(address2), 
+    .address3(address3), 
+    .wdata3(wdata3), 
+    .rdata1(rdata1), 
+    .rdata2(rdata2)
+    );
+
+

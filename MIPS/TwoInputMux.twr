@@ -1,0 +1,148 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Anti-Filter\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3
+-s 3 -n 3 -fastpaths -xml TwoInputMux.twx TwoInputMux.ncd -o TwoInputMux.twr
+TwoInputMux.pcf
+
+Design file:              TwoInputMux.ncd
+Physical constraint file: TwoInputMux.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+in0<0>         |out<0>         |    7.128|
+in0<1>         |out<1>         |    7.471|
+in0<2>         |out<2>         |    7.088|
+in0<3>         |out<3>         |    7.371|
+in0<4>         |out<4>         |    7.386|
+in0<5>         |out<5>         |    7.608|
+in0<6>         |out<6>         |    6.881|
+in0<7>         |out<7>         |    7.567|
+in0<8>         |out<8>         |    7.469|
+in0<9>         |out<9>         |    6.972|
+in0<10>        |out<10>        |    7.446|
+in0<11>        |out<11>        |    7.461|
+in0<12>        |out<12>        |    6.959|
+in0<13>        |out<13>        |    7.421|
+in0<14>        |out<14>        |    7.097|
+in0<15>        |out<15>        |    7.312|
+in0<16>        |out<16>        |    7.189|
+in0<17>        |out<17>        |    7.393|
+in0<18>        |out<18>        |    5.776|
+in0<19>        |out<19>        |    5.576|
+in0<20>        |out<20>        |    7.334|
+in0<21>        |out<21>        |    6.599|
+in0<22>        |out<22>        |    5.563|
+in0<23>        |out<23>        |    6.261|
+in0<24>        |out<24>        |    6.114|
+in0<25>        |out<25>        |    6.168|
+in0<26>        |out<26>        |    6.119|
+in0<27>        |out<27>        |    6.373|
+in0<28>        |out<28>        |    5.769|
+in0<29>        |out<29>        |    7.548|
+in0<30>        |out<30>        |    6.421|
+in0<31>        |out<31>        |    5.970|
+in1<0>         |out<0>         |    7.690|
+in1<1>         |out<1>         |    7.532|
+in1<2>         |out<2>         |    7.569|
+in1<3>         |out<3>         |    7.752|
+in1<4>         |out<4>         |    7.390|
+in1<5>         |out<5>         |    7.767|
+in1<6>         |out<6>         |    7.467|
+in1<7>         |out<7>         |    7.668|
+in1<8>         |out<8>         |    7.513|
+in1<9>         |out<9>         |    7.399|
+in1<10>        |out<10>        |    6.997|
+in1<11>        |out<11>        |    7.230|
+in1<12>        |out<12>        |    7.104|
+in1<13>        |out<13>        |    7.543|
+in1<14>        |out<14>        |    7.121|
+in1<15>        |out<15>        |    7.326|
+in1<16>        |out<16>        |    7.816|
+in1<17>        |out<17>        |    6.776|
+in1<18>        |out<18>        |    5.459|
+in1<19>        |out<19>        |    6.551|
+in1<20>        |out<20>        |    6.651|
+in1<21>        |out<21>        |    7.551|
+in1<22>        |out<22>        |    6.650|
+in1<23>        |out<23>        |    7.307|
+in1<24>        |out<24>        |    7.003|
+in1<25>        |out<25>        |    7.261|
+in1<26>        |out<26>        |    6.884|
+in1<27>        |out<27>        |    7.181|
+in1<28>        |out<28>        |    6.927|
+in1<29>        |out<29>        |    7.414|
+in1<30>        |out<30>        |    7.328|
+in1<31>        |out<31>        |    6.900|
+select         |out<0>         |    8.358|
+select         |out<1>         |    8.204|
+select         |out<2>         |    7.761|
+select         |out<3>         |    8.184|
+select         |out<4>         |    8.107|
+select         |out<5>         |    8.553|
+select         |out<6>         |    8.439|
+select         |out<7>         |    8.159|
+select         |out<8>         |    8.080|
+select         |out<9>         |    8.044|
+select         |out<10>        |    8.041|
+select         |out<11>        |    8.215|
+select         |out<12>        |    7.975|
+select         |out<13>        |    7.918|
+select         |out<14>        |    7.577|
+select         |out<15>        |    7.815|
+select         |out<16>        |    7.552|
+select         |out<17>        |    8.129|
+select         |out<18>        |    6.598|
+select         |out<19>        |    6.323|
+select         |out<20>        |    8.033|
+select         |out<21>        |    6.669|
+select         |out<22>        |    6.028|
+select         |out<23>        |    6.388|
+select         |out<24>        |    6.258|
+select         |out<25>        |    6.196|
+select         |out<26>        |    6.072|
+select         |out<27>        |    6.137|
+select         |out<28>        |    5.977|
+select         |out<29>        |    8.194|
+select         |out<30>        |    6.145|
+select         |out<31>        |    5.968|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Jun 04 20:13:18 2019 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5004 MB
+
+
+

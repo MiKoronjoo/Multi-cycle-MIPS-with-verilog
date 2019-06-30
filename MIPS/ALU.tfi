@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+ALU instance_name (
+    .srca(srca), 
+    .srcb(srcb), 
+    .ALUcontrol(ALUcontrol), 
+    .zero(zero), 
+    .out(out)
+    );
+
+

@@ -1,0 +1,27 @@
+
+
+
+// Instantiate the module
+ControlUnit instance_name (
+    .executedInstr(executedInstr), 
+    .int_state(int_state), 
+    .int_respond(int_respond), 
+    .opcode(opcode), 
+    .clk(clk), 
+    .store_PC_REGFILE(store_PC_REGFILE), 
+    .ALUOp(ALUOp), 
+    .MemtoReg(MemtoReg), 
+    .RegDst(RegDst), 
+    .IorD(IorD), 
+    .ALUSrcA(ALUSrcA), 
+    .IRWrite(IRWrite), 
+    .MemWrite(MemWrite), 
+    .PCWrite(PCWrite), 
+    .Branch(Branch), 
+    .RegWrite(RegWrite), 
+    .ALUSrcB(ALUSrcB), 
+    .PCSrc(PCSrc), 
+    .current_state(current_state)
+    );
+
+

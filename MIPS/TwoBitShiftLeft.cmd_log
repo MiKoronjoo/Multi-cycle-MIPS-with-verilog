@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/TwoBitShiftLeft.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/TwoBitShiftLeft.syr" 

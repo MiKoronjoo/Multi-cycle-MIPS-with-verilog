@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.syr" 
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.syr" 
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.syr" 
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.syr" 
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.syr" 
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.syr" 
+vhdtdtfi -lang verilog -prj MIPS -o "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.tfi" -lib work "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS//Memory.v" -module Memory -template D:/Anti-Filter/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

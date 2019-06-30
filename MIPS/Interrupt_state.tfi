@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+Interrupt_state instance_name (
+    .control_state(control_state), 
+    .clk(clk), 
+    .interrupt(interrupt), 
+    .busy(busy), 
+    .non_maskable_int(non_maskable_int), 
+    .instr(instr), 
+    .respond(respond), 
+    .NMI(NMI), 
+    .state(state)
+    );
+
+

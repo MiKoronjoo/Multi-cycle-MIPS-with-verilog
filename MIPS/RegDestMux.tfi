@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+RegDestMux instance_name (
+    .select(select), 
+    .data1(data1), 
+    .data0(data0), 
+    .dataOut(dataOut)
+    );
+
+

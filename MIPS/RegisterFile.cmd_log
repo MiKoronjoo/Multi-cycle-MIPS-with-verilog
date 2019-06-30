@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.syr" 
+xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.syr" 
+vhdtdtfi -lang verilog -prj MIPS -o "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/RegisterFile.tfi" -lib work "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS//RegisterFile.v" -module RegisterFile -template D:/Anti-Filter/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

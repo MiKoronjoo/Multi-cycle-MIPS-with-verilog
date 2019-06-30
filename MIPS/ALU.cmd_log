@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj MIPS -o "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/ALU.tfi" -lib work "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS//ALU.v" -module ALU -template D:/Anti-Filter/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
