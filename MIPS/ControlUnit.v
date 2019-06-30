@@ -18,9 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ControlUnit(input [31:0] executedInstr , input [5:0] opcode , input clk 
+module ControlUnit(input [31:0] executedInstr,pcinput ,input nmint,interrupt,busy, input [5:0] opcode , input clk 
 						, output reg [1:0] ALUOp , output reg MemtoReg , RegDst , IorD , ALUSrcA ,
 						IRWrite , MemWrite , PCWrite , Branch , RegWrite ,DelayedIR , output reg [1:0] ALUSrcB , output reg [1:0] PCSrc,
+						output reg pcslct,
+						output reg savePC,
 						output reg [3:0] current_state
     );
 
@@ -47,34 +49,70 @@ parameter [5:0]
 				beq=4,
 				j=2,
 				sw=43;
+				
+reg interrupt_execution;
 
 //last instructions executed in interrupts
 parameter [31:0]
 				mi=0,
-				nmi=100;
+				nmi=20;
 	
 initial begin
 	current_state = fetch;
+	interrupt_execution=0;
+	pcslct=1;
 end
 
 always@(posedge clk)
 begin
-	
+	pcslct=1;
+	savePC=0;
 	case(current_state)
 	
 		fetch:	begin
-						RegWrite=0;
-						MemWrite=0;
-						Branch=0;
-						PCSrc=0;		
-						IRWrite=1;
-						PCWrite=1;
-						ALUOp=0;
-						ALUSrcA=0;
-						ALUSrcB=1;
-						IorD=0;
-						DelayedIR=0;
-						current_state=decode;
+						if(interrupt_execution==0 & (nmint | (interrupt & (~busy))))
+							begin
+							savePC=1;
+							PCSrc=3;
+							PCWrite=1;
+							interrupt_execution=1;
+							current_state=fetch;
+							end
+						else
+						begin 
+							if(interrupt_execution==1 & (pcinput==mi | pcinput==nmi))
+								begin
+								PCSrc=0;	
+								pcslct=0;
+								PCWrite=1;
+								RegWrite=0;
+								MemWrite=0;
+								Branch=0;
+								IRWrite=1;
+								ALUOp=0;
+								ALUSrcA=0;
+								ALUSrcB=1;
+								IorD=0;
+								DelayedIR=0;
+								interrupt_execution=0;
+								current_state=decode;
+								end
+							else
+								begin
+								RegWrite=0;
+								MemWrite=0;
+								Branch=0;
+								PCSrc=0;		
+								IRWrite=1;
+								PCWrite=1;
+								ALUOp=0;
+								ALUSrcA=0;
+								ALUSrcB=1;
+								IorD=0;
+								DelayedIR=0;
+								current_state=decode;
+								end
+						end
 					end
 					
 		decode:	begin

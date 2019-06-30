@@ -66,13 +66,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Design Summary/Reports</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Design Summary/Reports</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -81,16 +81,15 @@
          <ClosedNode>/Contorol_test C:|Users|Markazi.co|Desktop|Computer Architecture|verilog|MIPS|Contorol_test.v</ClosedNode>
          <ClosedNode>/PC_test C:|Users|Markazi.co|Desktop|Computer Architecture|verilog|MIPS|PC_test.v</ClosedNode>
          <ClosedNode>/RegisterFile_test C:|Users|Markazi.co|Desktop|Computer Architecture|verilog|MIPS|RegisterFile_test.v</ClosedNode>
-         <ClosedNode>/Top_test C:|Users|Markazi.co|Desktop|Computer Architecture|verilog|MIPS|Top_test.v/uut - Top</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - Memory (C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.v)</SelectedItem>
+         <SelectedItem>uut - Top (C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >8</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000100000000020000000000000000000000000200000064ffffffff000000810000000300000002000001000000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b6000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b60000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - Memory (C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Memory.v)</CurrentItem>
+      <CurrentItem>uut - Top (C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -111,13 +110,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem>ISim Simulator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem>ISim Simulator</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Behavioral Simulation</CurrentView>

@@ -5,7 +5,6 @@
 ProgramCounter instance_name (
     .clk(clk), 
     .en(en), 
-    .sr(sr), 
     .address(address), 
     .pcout(pcout)
     );

@@ -40,7 +40,9 @@ wire [31:0] memory_in_addr;
 wire [31:0] mem_out_instr_data;
 wire [31:0] instruction;
 wire [31:0] data_;
-
+wire [31:0] interruptAddress;
+wire [31:0] savedPC;
+wire [31:0] PCIN;
 
 wire [2:0] ALU_control;
 wire [4:0] reg_write_dest;
@@ -64,7 +66,7 @@ assign PCEn = pcWrite | ( is_branch & zerof) ;
 ProgramCounter PC_ (
     .clk(clock), 
     .en(PCEn),  
-    .address(PC_IN),
+    .address(PCIN),
     .pcout(pc_out)
     );
 
@@ -113,6 +115,10 @@ TwoInputMux IR_mux (
 
 ControlUnit Control_Unit(
     .executedInstr(pc_out), 
+	 .pcinput(PCIN),
+	 .nmint(NON_maskable_interrupt),
+	 .interrupt(interrupt_r),
+	 .busy(CPU_bus),
     .opcode(selected_IR[31:26]), 
     .clk(clock), 
     .ALUOp(ALU_operation), 
@@ -128,6 +134,8 @@ ControlUnit Control_Unit(
     .ALUSrcB(ALUSrc2), 
     .PCSrc(pcsource), 
 	 .DelayedIR(select_IR),
+	 .pcslct(pcslct),
+	 .savePC(savePC),
     .current_state(system_state)
     );
 
@@ -216,8 +224,35 @@ FourInputMux pc_source_mux (
     .data0(ALUresult), 
     .data1(ALUOut), 
     .data2({pc_out[31:28],instruction[25:0],2'b00}), 
-    .data3(data3), 
+    .data3(interruptAddress), 
     .dataOut(PC_IN)
+    );
+
+
+//////////////////////
+
+TwoInputMux interrupt_mux (
+    .select(NON_maskable_interrupt), 
+    .in0(0), 
+    .in1(20), 
+    .out(interruptAddress)
+    );
+
+TwoInputMux PC_savedPC (
+    .select(pcslct), 
+    .in0(savedPC), 
+    .in1(PC_IN), 
+    .out(PCIN)
+    );
+
+
+
+// save pc before executing interrupt
+Register_with_enable instance_name (
+    .clk(clock), 
+    .en(savePC), 
+    .dataIn(pc_out), 
+    .dataOut(savedPC)
     );
 
 
