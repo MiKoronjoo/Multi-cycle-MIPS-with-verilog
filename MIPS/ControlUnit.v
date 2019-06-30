@@ -18,11 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ControlUnit(input [31:0] executedInstr , input [1:0] int_state , input int_respond , input [5:0] opcode , input clk ,
-						output reg [1:0] store_PC_REGFILE , output reg [1:0] ALUOp , output reg MemtoReg , RegDst , IorD , ALUSrcA ,
+module ControlUnit(input [31:0] executedInstr , input [5:0] opcode , input clk 
+						, output reg [1:0] ALUOp , output reg MemtoReg , RegDst , IorD , ALUSrcA ,
 						IRWrite , MemWrite , PCWrite , Branch , RegWrite ,DelayedIR , output reg [1:0] ALUSrcB , output reg [1:0] PCSrc,
 						output reg [3:0] current_state
-    );				//store_PC_REGFILE-> 00:do nothing, 01:store, 11:restore
+    );
 
 //states
 parameter [3:0] 
@@ -59,7 +59,6 @@ end
 
 always@(posedge clk)
 begin
-	store_PC_REGFILE=0;
 	
 	case(current_state)
 	
@@ -67,31 +66,13 @@ begin
 						RegWrite=0;
 						MemWrite=0;
 						Branch=0;
-						if(int_state==2 & (executedInstr==mi | executedInstr==nmi))
-						begin
-						store_PC_REGFILE=3;
+						PCSrc=0;		
 						IRWrite=1;
-						end
-						
-						else
-						begin
-							if(int_respond==0 & int_state==2)
-								begin
-								PCSrc=3;
-								store_PC_REGFILE=1;
-								end
-							
-							else
-								begin
-									PCSrc=0;
-								end
-								IRWrite=1;
-								PCWrite=1;
-								ALUOp=0;
-								ALUSrcA=0;
-								ALUSrcB=1;
-								IorD=0;
-						end
+						PCWrite=1;
+						ALUOp=0;
+						ALUSrcA=0;
+						ALUSrcB=1;
+						IorD=0;
 						DelayedIR=0;
 						current_state=decode;
 					end

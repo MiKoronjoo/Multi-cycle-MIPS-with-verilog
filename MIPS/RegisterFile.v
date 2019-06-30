@@ -19,18 +19,18 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-module RegisterFile(input clk,we3,input [1:0] sr,input [4:0] address1, address2, address3,
+module RegisterFile(input clk,we3,input [4:0] address1, address2, address3,
 		input [31:0] wdata3
 		,output [31:0] rdata1, rdata2
     );
 	 
 reg [31:0] regfile [31:0];
-reg [31:0] backup [31:0];
 reg [5:0] c;
 
+//initiate with 0
 initial begin 
-			c=0;
-			repeat(32)
+			c=1;
+			repeat(31)
 			begin
 			regfile[c]=0;
 			c=c+1;
@@ -40,27 +40,9 @@ end
 
 always@(posedge clk)
 begin
-	c=0;
+
 	regfile[0]=0;
 	
-		if(sr==1)//store
-		begin
-			repeat(32)
-			begin
-			backup[c]=regfile[c];
-			c=c+1;
-			end
-		end
-		
-		if(sr==3)//restore 
-		begin
-			repeat(32)
-			begin
-			regfile[c]=backup[c];
-			c=c+1;
-			end
-		end
-		
 		if(we3)
 		begin
 		if(address3 != 0)

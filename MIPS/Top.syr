@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: Top.prj
 
@@ -121,8 +121,6 @@ Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilo
 Parsing module <ProgramCounter>.
 Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Memory.v" into library work
 Parsing module <Memory>.
-Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Interrupt_state.v" into library work
-Parsing module <Interrupt_state>.
 Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\FourInputMux.v" into library work
 Parsing module <FourInputMux>.
 Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\ControlUnit.v" into library work
@@ -151,16 +149,13 @@ Elaborating module <Register_with_enable>.
 Elaborating module <Register>.
 
 Elaborating module <ControlUnit>.
-
-Elaborating module <Interrupt_state>.
-WARNING:HDLCompiler:1127 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" Line 135: Assignment to interrupt_type ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" Line 131: Assignment to system_state ignored, since the identifier is never used
 
 Elaborating module <ALU_decoder>.
 
 Elaborating module <RegDestMux>.
 
 Elaborating module <RegisterFile>.
-WARNING:HDLCompiler:413 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\RegisterFile.v" Line 60: Result of 7-bit expression is truncated to fit in 6-bit target.
 
 Elaborating module <SignExtend>.
 
@@ -168,27 +163,27 @@ Elaborating module <FourInputMux>.
 
 Elaborating module <ALU>.
 WARNING:HDLCompiler:413 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\ALU.v" Line 55: Result of 32-bit expression is truncated to fit in 1-bit target.
-WARNING:HDLCompiler:189 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" Line 224: Size mismatch in connection of port <data3>. Formal port size is 32-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:634 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" Line 224: Net <data3> does not have a driver.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 63. All outputs of instance <PC_> of block <ProgramCounter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:HDLCompiler:189 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" Line 219: Size mismatch in connection of port <data3>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:634 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" Line 219: Net <data3> does not have a driver.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 64. All outputs of instance <PC_> of block <ProgramCounter> are unconnected in block <Top>. Underlying logic will be removed.
 WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 73. All outputs of instance <IorDMux> of block <TwoInputMux> are unconnected in block <Top>. Underlying logic will be removed.
 WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 82. All outputs of instance <instr_data_memory> of block <Memory> are unconnected in block <Top>. Underlying logic will be removed.
 WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 91. All outputs of instance <instruction_reg> of block <Register_with_enable> are unconnected in block <Top>. Underlying logic will be removed.
 WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 99. All outputs of instance <data_register> of block <Register> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 105. All outputs of instance <Control_Unit> of block <ControlUnit> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 127. All outputs of instance <interrupt_unit> of block <Interrupt_state> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 139. All outputs of instance <ALUdecoder> of block <ALU_decoder> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 146. All outputs of instance <Write_reg_mux> of block <RegDestMux> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 153. All outputs of instance <mem_to_reg_Mux> of block <TwoInputMux> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 160. All outputs of instance <Register_FILE> of block <RegisterFile> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 172. All outputs of instance <read_register1> of block <Register> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 178. All outputs of instance <read_register2> of block <Register> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 184. All outputs of instance <SE> of block <SignExtend> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 189. All outputs of instance <alu_src_b_mux> of block <FourInputMux> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 198. All outputs of instance <alu_src_a_mux> of block <TwoInputMux> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 205. All outputs of instance <ALU_ins> of block <ALU> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 213. All outputs of instance <Alu_out_reg> of block <Register> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 219. All outputs of instance <pc_source_mux> of block <FourInputMux> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 106. All outputs of instance <IR_mux> of block <TwoInputMux> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 114. All outputs of instance <Control_Unit> of block <ControlUnit> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 135. All outputs of instance <ALUdecoder> of block <ALU_decoder> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 142. All outputs of instance <Write_reg_mux> of block <RegDestMux> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 149. All outputs of instance <mem_to_reg_Mux> of block <TwoInputMux> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 156. All outputs of instance <Register_FILE> of block <RegisterFile> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 167. All outputs of instance <read_register1> of block <Register> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 173. All outputs of instance <read_register2> of block <Register> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 179. All outputs of instance <SE> of block <SignExtend> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 184. All outputs of instance <alu_src_b_mux> of block <FourInputMux> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 193. All outputs of instance <alu_src_a_mux> of block <TwoInputMux> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 200. All outputs of instance <ALU_ins> of block <ALU> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 208. All outputs of instance <Alu_out_reg> of block <Register> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 214. All outputs of instance <pc_source_mux> of block <FourInputMux> are unconnected in block <Top>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -196,7 +191,10 @@ WARNING:Xst:2972 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MI
 
 Synthesizing Unit <Top>.
     Related source file is "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v".
-INFO:Xst:3210 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 127: Output port <NMI> of the instance <interrupt_unit> is unconnected or connected to loadless signal.
+WARNING:Xst:647 - Input <NON_maskable_interrupt> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <interrupt_r> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <CPU_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" line 114: Output port <current_state> of the instance <Control_Unit> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <data3> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
@@ -323,14 +321,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.14 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.38 secs
  
 --> 
 
-Total memory usage is 4671080 kilobytes
+Total memory usage is 4654788 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   25 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

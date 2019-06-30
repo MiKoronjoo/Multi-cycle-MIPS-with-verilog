@@ -22,7 +22,7 @@ module Top(input clock,NON_maskable_interrupt,interrupt_r,CPU_busy
     );
 
 wire [31:0] pc_out;
-wire [1:0] store_restore;
+
 wire [1:0] ALU_operation;
 wire memory_toregister;
 wire register_dst;
@@ -40,8 +40,8 @@ wire [31:0] memory_in_addr;
 wire [31:0] mem_out_instr_data;
 wire [31:0] instruction;
 wire [31:0] data_;
-wire interrupt_respond,interrupt_type;
-wire [1:0] Interrupt_State;
+
+
 wire [2:0] ALU_control;
 wire [4:0] reg_write_dest;
 wire [31:0] reg_write_data;
@@ -63,8 +63,7 @@ assign PCEn = pcWrite | ( is_branch & zerof) ;
 
 ProgramCounter PC_ (
     .clk(clock), 
-    .en(PCEn), 
-    .sr(store_restore), 
+    .en(PCEn),  
     .address(PC_IN),
     .pcout(pc_out)
     );
@@ -114,11 +113,8 @@ TwoInputMux IR_mux (
 
 ControlUnit Control_Unit(
     .executedInstr(pc_out), 
-    .int_state(Interrupt_State), 
-    .int_respond(interrupt_respond), 
     .opcode(selected_IR[31:26]), 
     .clk(clock), 
-    .store_PC_REGFILE(store_restore), 
     .ALUOp(ALU_operation), 
     .MemtoReg(memory_toregister), 
     .RegDst(register_dst), 
@@ -135,17 +131,6 @@ ControlUnit Control_Unit(
     .current_state(system_state)
     );
 
-Interrupt_state interrupt_unit (
-    .control_state(system_state), 
-    .clk(clock), 
-    .interrupt(interrupt_r), 
-    .busy(CPU_busy), 
-    .non_maskable_int(NON_maskable_interrupt), 
-    .instr(instruction), 
-    .respond(interrupt_respond), 
-    .NMI(interrupt_type), 
-    .state(Interrupt_State)
-    );
 	 
 ALU_decoder ALUdecoder (
     .ALUop(ALU_operation), 
@@ -171,7 +156,6 @@ TwoInputMux mem_to_reg_Mux (
 RegisterFile Register_FILE (
     .clk(clock), 
     .we3(regWrite), 
-    .sr(store_restore), 
     .address1(instruction[25:21]), 
     .address2(instruction[20:16]), 
     .address3(reg_write_dest), 
