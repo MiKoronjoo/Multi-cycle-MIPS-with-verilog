@@ -52,7 +52,7 @@ module Top_test;
 		.PCIN(PCIN), 
 		.reg_write_dest(reg_write_dest), 
 		.reg_write_data(reg_write_data), 
-		.regdata1(regdata1), 
+		.regdata1(regdata1),
 		.regdata2(regdata2)
 	);
 
@@ -74,7 +74,7 @@ module Top_test;
 		 
 		#560;
 		NON_maskable_interrupt = 1;//s3=0
-		#100;
+		#100;//140
 		NON_maskable_interrupt = 0;
 		//s2=s2+3=3
 		//s3=s3+4=4

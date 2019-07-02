@@ -51,7 +51,7 @@ parameter [5:0]
 				sw=43;
 				
 reg interrupt_execution;
-
+reg interrupt_first_inst;
 //last instructions executed in interrupts
 parameter [31:0]
 				mi=0,
@@ -61,17 +61,21 @@ initial begin
 	current_state = fetch;
 	interrupt_execution=0;
 	pcslct=1;
+	interrupt_first_inst=0;
 end
 
 always@(posedge clk)
 begin
+	interrupt_first_inst=0;
 	pcslct=1;
 	savePC=0;
+	
 	case(current_state)
 	
 		fetch:	begin
 						if(interrupt_execution==0 & (nmint | (interrupt & (~busy))))
 							begin
+							interrupt_first_inst=1;
 							savePC=1;
 							PCSrc=3;
 							PCWrite=1;
@@ -99,20 +103,38 @@ begin
 								current_state=decode;
 								end
 							else
-								begin
-								RegWrite=0;
-								MemWrite=0;
-								Branch=0;
-								PCSrc=0;		
-								IRWrite=1;
-								PCWrite=1;
-								ALUOp=0;
-								ALUSrcA=0;
-								ALUSrcB=1;
-								IorD=0;
-								DelayedIR=0;
-								current_state=decode;
-								end
+								if(interrupt_execution==1 & (executedInstr==mi | executedInstr==nmi) & (~interrupt_first_inst))
+									begin
+									PCSrc=0;	
+									pcslct=0;
+									PCWrite=1;
+									RegWrite=0;
+									MemWrite=0;
+									Branch=0;
+									IRWrite=1;
+									ALUOp=0;
+									ALUSrcA=0;
+									ALUSrcB=1;
+									IorD=0;
+									DelayedIR=0;
+									interrupt_execution=0;
+									current_state=decode;
+									end
+								else
+									begin
+									RegWrite=0;
+									MemWrite=0;
+									Branch=0;
+									PCSrc=0;		
+									IRWrite=1;
+									PCWrite=1;
+									ALUOp=0;
+									ALUSrcA=0;
+									ALUSrcB=1;
+									IorD=0;
+									DelayedIR=0;
+									current_state=decode;
+									end
 						end
 					end
 					
