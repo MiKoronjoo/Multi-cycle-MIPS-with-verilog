@@ -17,3 +17,4 @@ xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilo
 xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top.syr" 
 xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top.syr" 
 xst -intstyle ise -ifn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top.xst" -ofn "C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/Top.syr" 
+xst -intstyle ise -ifn "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/Top.xst" -ofn "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/Top.syr" 

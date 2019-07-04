@@ -21,7 +21,7 @@
 module Memory(input [31:0] wd,input [31:0] address, input we,clk, output [31:0] rd
     );
 
-reg [31:0] memory [1024:0];
+reg [31:0] memory [1023:0];
 
 initial begin
 	memory[0]=32'b00100000000000100000000000000000;//s2=0 int
