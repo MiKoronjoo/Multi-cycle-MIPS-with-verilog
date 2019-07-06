@@ -1,3 +1,0 @@
-verilog isim_temp "ALU.v"
-verilog isim_temp "ALU_test.v"
-verilog isim_temp "/opt/14.7/ISE_DS/ISE//verilog/src/glbl.v"

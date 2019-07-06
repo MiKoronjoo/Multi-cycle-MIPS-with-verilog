@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-07-04T10:19:05</DateModified>
+  <DateModified>2019-07-06T13:51:52</DateModified>
   <ModuleName>Top</ModuleName>
   <SummaryTimeStamp>2019-06-29T20:02:11</SummaryTimeStamp>
-  <SavedFilePath>/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/iseconfig/Top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS/iseconfig/Top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Markazi.co/Desktop/Computer Architecture/verilog/MIPS\</ImplementationReportsDirectory>
   <DateInitialized>2019-06-06T00:20:36</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

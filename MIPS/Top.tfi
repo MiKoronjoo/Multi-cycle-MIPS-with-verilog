@@ -1,0 +1,20 @@
+
+
+
+// Instantiate the module
+Top instance_name (
+    .clock(clock), 
+    .NON_maskable_interrupt(NON_maskable_interrupt), 
+    .interrupt_r(interrupt_r), 
+    .CPU_busy(CPU_busy), 
+    .INA(INA), 
+    .pc_out(pc_out), 
+    .system_state(system_state), 
+    .PCIN(PCIN), 
+    .reg_write_dest(reg_write_dest), 
+    .reg_write_data(reg_write_data), 
+    .regdata1(regdata1), 
+    .regdata2(regdata2)
+    );
+
+

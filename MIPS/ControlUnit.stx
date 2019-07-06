@@ -41,16 +41,18 @@ TABLE OF CONTENTS
 =========================================================================
 Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\ControlUnit.v" into library work
 Parsing module <ControlUnit>.
+WARNING:HDLCompiler:936 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\ControlUnit.v" Line 21: Keyword 'unsigned' is not allowed here in this mode of verilog
+WARNING:HDLCompiler:936 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\ControlUnit.v" Line 45: Keyword 'unsigned' is not allowed here in this mode of verilog
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.30 secs
+Total CPU time to Xst completion: 5.25 secs
  
 --> 
 
 Total memory usage is 4532736 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

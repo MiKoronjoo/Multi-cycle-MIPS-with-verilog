@@ -1,21 +1,18 @@
-Release 14.7 - xst P.20131013 (lin64)
+Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
---> 
-Reading design: Top.prj
+--> Reading design: Top.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -108,29 +105,29 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/TwoInputMux.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\TwoInputMux.v" into library work
 Parsing module <TwoInputMux>.
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/SignExtend.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\SignExtend.v" into library work
 Parsing module <SignExtend>.
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/Register_with_enable.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Register_with_enable.v" into library work
 Parsing module <Register_with_enable>.
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/RegisterFile.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\RegisterFile.v" into library work
 Parsing module <RegisterFile>.
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/Register.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Register.v" into library work
 Parsing module <Register>.
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/RegDestMux.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\RegDestMux.v" into library work
 Parsing module <RegDestMux>.
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/ProgramCounter.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\ProgramCounter.v" into library work
 Parsing module <ProgramCounter>.
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/FourInputMux.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\FourInputMux.v" into library work
 Parsing module <FourInputMux>.
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/ControlUnit.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\ControlUnit.v" into library work
 Parsing module <ControlUnit>.
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/ALU_decoder.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\ALU_decoder.v" into library work
 Parsing module <ALU_decoder>.
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/ALU.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\ALU.v" into library work
 Parsing module <ALU>.
-Analyzing Verilog file "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/Top.v" into library work
+Analyzing Verilog file "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" into library work
 Parsing module <Top>.
 
 =========================================================================
@@ -142,13 +139,12 @@ Elaborating module <Top>.
 Elaborating module <ProgramCounter>.
 
 Elaborating module <TwoInputMux>.
-ERROR:HDLCompiler:1654 - "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/Top.v" Line 85: Instantiating <instr_data_memory> from unknown module <Memory>
+ERROR:HDLCompiler:1654 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" Line 85: Instantiating <instr_data_memory> from unknown module <Memory>
 Module Top remains a blackbox, due to errors in its contents
-WARNING:HDLCompiler:1499 - "/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/Top.v" Line 21: Empty module <Top> remains a black box.
+WARNING:HDLCompiler:1499 - "C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" Line 21: Empty module <Top> remains a black box.
 --> 
 
-
-Total memory usage is 346088 kilobytes
+Total memory usage is 4535164 kilobytes
 
 Number of errors   :    1 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

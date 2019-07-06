@@ -65,21 +65,22 @@ module Top_test;
 
 		// Wait 100 ns for global reset to finish
 		//s2=s2+3=3
-		#100;
-       interrupt_r  = 1; //s2=0
-		#100;
-       interrupt_r  = 0;
+		///////////////////////////
+		//#100;
+       //interrupt_r  = 1; //s2=0
+		//#100;
+       //interrupt_r  = 0;
 		 //s3=s3+4=4
 		 //s4=s3+s2=4
 		 
-		#560;
-		NON_maskable_interrupt = 1;//s3=0
-		#100;//140
-		NON_maskable_interrupt = 0;
+		//#560;
+		//NON_maskable_interrupt = 1;//s3=0
+		//#100;//140
+		//NON_maskable_interrupt = 0;
 		//s2=s2+3=3
 		//s3=s3+4=4
 		//s4=s2+s3=7
-		// Add stimulus here
+//		 Add stimulus here
 
 	end
       always begin #20 clock=~clock; end

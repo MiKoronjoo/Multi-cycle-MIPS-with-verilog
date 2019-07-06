@@ -5,10 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="1654" delta="new" >"/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/Top.v" Line 85: Instantiating &lt;<arg fmt="%s" index="1">instr_data_memory</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">Memory</arg>&gt;
+<msg type="error" file="HDLCompiler" num="1654" delta="new" >"C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" Line 85: Instantiating &lt;<arg fmt="%s" index="1">instr_data_memory</arg>&gt; from unknown module &lt;<arg fmt="%s" index="2">Memory</arg>&gt;
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"/mnt/HDD/Multi-cycle-MIPS-with-verilog/MIPS/Top.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">Top</arg>&gt; remains a black box.
+<msg type="warning" file="HDLCompiler" num="1499" delta="new" >"C:\Users\Markazi.co\Desktop\Computer Architecture\verilog\MIPS\Top.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">Top</arg>&gt; remains a black box.
 </msg>
 
 </messages>

@@ -1,3 +1,0 @@
-verilog isim_temp "Memory.v"
-verilog isim_temp "Memory_Test.v"
-verilog isim_temp "/opt/14.7/ISE_DS/ISE//verilog/src/glbl.v"

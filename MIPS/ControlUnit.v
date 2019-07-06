@@ -43,12 +43,12 @@ parameter [3:0]
 
 //instruction opcodes
 parameter [5:0] 
-				Rtype=0,
-				addi=8,
-				lw=35,
-				beq=4,
-				j=2,
-				sw=43;
+				Rtype=6'b000000,
+				addi=6'b001000,
+				lw=6'b100011,
+				beq=6'b000100,
+				j=6'b000010,
+				sw=6'b101011;
 				
 reg interrupt_execution;
 reg interrupt_first_inst;
@@ -143,7 +143,7 @@ begin
 						ALUSrcB=3;
 						ALUOp=0;
 						PCWrite=0;
-						DelayedIR=1;
+						DelayedIR<=1;
 						IRWrite=0;
 						case(opcode)
 						
